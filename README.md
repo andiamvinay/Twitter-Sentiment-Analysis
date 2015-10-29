@@ -33,9 +33,5 @@ app_modules/analyze.js consists of two functions
 - performAnalysis :  which ranks the tweets
 - getTweets : which gets tweets based on the search query
 
-
-
-
-
-
-
+----
+Contact : VINAY / vinay@vinayreddy.net
