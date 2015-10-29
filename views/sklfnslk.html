@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- load bootstrap css-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	
+    <!-- load fontawesome-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="/javascripts/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1><span class="fa fa-cogs"></span> String to Analyze <a href="/logout"><span class="pull-right fa fa-sign-out"></span></a>
+        </h1>
+
+        <!-- LOGIN FORM-->
+        <form id="#inputForm">
+          <div class="form-group">
+            <input type="text" id="conStr" placeholder="Enter String to Analyze" class="form-control" required>
+          </div>
+		  <input type="button" class="btn btn-warning btn-lg" id="getRes" value="Analyze">
+        </form>
+        <hr>
+		<div id="result" class="col-sm-6 col-sm-offset-4">
+			<img src="images/infinity.gif" id="infinity"></img>
+			<img src="images/toobad.png" id="desolate" ></img>
+			<img src="images/bad.png" id="grim" ></img>
+			<img src="images/nut.png" id="neutral" ></img>
+			<img src="images/go.png" id="super" ></img>
+			<img src="images/toogoog.png" id="jubilant" ></img>
+		</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Sentiment Analyzer
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    // load bootstrap css
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    // load fontawesome
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='/javascripts/app.js')
+  body
+    .container
+      .col-sm-6.col-sm-offset-3
+        h1
+          span.fa.fa-cogs
+          |  String to Analyze 
+          a(href='/logout')
+            span.pull-right.fa.fa-sign-out
+        // LOGIN FORM
+        form(id='#inputForm')
+          .form-group
+            input#conStr.form-control(type='text', placeholder='Enter String to Analyze', required='')
+          input#getRes.btn.btn-warning.btn-lg(type='button', value='Analyze')
+        hr
+        #result.col-sm-6.col-sm-offset-4
+          img#infinity(src='images/infinity.gif')
+          img#desolate(src='images/toobad.png')
+          img#grim(src='images/bad.png')
+          img#neutral(src='images/nut.png')
+          img#super(src='images/go.png')
+          img#jubilant(src='images/toogoog.png')
